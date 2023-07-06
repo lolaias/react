@@ -9,3 +9,4 @@ export const Aside = styled.aside`
   h3 strong{
     font-weight: bold;
   }
+`

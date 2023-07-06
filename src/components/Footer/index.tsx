@@ -1,16 +1,16 @@
 import * as S from "./styles"
-import Face from "../../assets/face.svg"
-import Insta from "../../assets/insta.svg"
-import Linkedin from "../../assets/linkedin.svg"
+import face from "../../assets/face.svg"
+import insta from "../../assets/insta.svg"
+import linkedin from "../../assets/linkedin.svg"
 
 export function Footer() {
   return (
     <S.Footer>
       <a href="https://facebook.com" target="_blank">
-        <img src={Face} alt="Facebook" />
+        <img src={face} alt="Facebook" />
       </a>
-      <img src={Insta} alt="Instagram" />
-      <img src={Linkedin} alt="Linkedin" />
+      <img src={insta} alt="Instagram" />
+      <img src={linkedin} alt="Linkedin" />
     </S.Footer>
   )
 }
