@@ -21,4 +21,3 @@ export function Header({ setPage }: IPage) {
     </S.Header>
   )
 }
-
