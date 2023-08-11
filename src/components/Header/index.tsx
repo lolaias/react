@@ -1,5 +1,5 @@
 import * as S from "./styles"
-import Logo from "../../assets/truck.svg"
+import Logo from "../../assets/vagalume 1.png"
 import { IPage } from "../../App"
 
 export function Header({ setPage }: IPage) {
@@ -14,7 +14,13 @@ export function Header({ setPage }: IPage) {
             <a href="#" onClick={() => setPage(1)}>Página Inicial</a>
           </li>
           <li>
-            <a href="#" onClick={() => setPage(2)}>Lista</a>
+            <a href="#" onClick={() => setPage(2)}>Cadastrar</a>
+          </li>
+          <li>
+            <a href="#" onClick={() => setPage (3)}>Sobre</a>
+          </li>
+          <li>
+            <a href="#" onClick={() => setPage(4)}>Listagem Atual</a>
           </li>
         </ul>
       </S.NavBar>

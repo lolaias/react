@@ -3,7 +3,7 @@ import { colors } from "../../styles/GlobalStyle"
 
 export const Header = styled.header`
   /* Cabeçalho */
-  border-bottom: 0.4rem solid ${colors.third};
+  border-bottom: 0.4rem solid ${colors.secondary};
   display: flex;
   height: 6rem;
   picture {
@@ -37,7 +37,7 @@ export const NavBar = styled.nav`
       }
     }
     li:hover {
-      background-color: ${colors.secondaryLight};
+      background-color: ${colors.secondary};
     }
   }
 
