@@ -8,9 +8,9 @@ export function List() {
       {dados.map(item => (
         <ComponentCard
           key={item.id}
-          data={item.data}
-          mensagem={item.mensagem}
-          titulo={item.titulo}
+          nome={item.nome}
+          idade={item.idade}
+          qualificações={item.qualificações}
         />
       ))}
     </S.Section>

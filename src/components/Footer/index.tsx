@@ -6,13 +6,13 @@ import chrome from "../../assets/cromada 1.png"
 export function Footer() {
   return (
     <S.Footer>
-      <a href="" target="_blank">
+      <a href="https://instagram.com/naughty_dog_inc?igshid=MzRlODBiNWFlZA==">
         <img src={insta} alt="Instagram" />
       </a>
-      <a href="">
+      <a href="https://open.spotify.com/playlist/53mfE4CmwwB2WeltKbc2MW?si=Ol3RvlMJThGeEq8ggJGHtQ&utm_source=copy-link">
         <img src={spotify} alt="Spotify" />
       </a>
-      <a href="">
+      <a href="https://diariodeseries.com.br">
         <img src={chrome} alt="Chrome" />
       </a>
     </S.Footer>
