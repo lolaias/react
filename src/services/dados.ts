@@ -2,6 +2,7 @@
 export const dados = [
     {
       id: 1,
+      img: "",
       nome: "Ana",
       idade: "14",
       qualificações:"Agilidade, Raciocinio Rapido"

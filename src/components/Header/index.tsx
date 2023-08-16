@@ -16,9 +16,6 @@ export function Header({ setPage }: IPage) {
           <li>
             <a href="#" onClick={() => setPage(2)}>Listagem Atual</a>
           </li>
-          <li>
-            <a href="#" onClick={() => setPage(3)}>Sobre</a>
-          </li>
         </ul>
       </S.NavBar>
     </S.Header>

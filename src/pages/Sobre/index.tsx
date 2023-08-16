@@ -3,6 +3,7 @@ import * as S from './styles'
 export function Sobre() {
     return (
       <S.Section>
+        <button></button>
         <h2>Por Que a Rebelião Surgiu?</h2>
          <p>Por causa das leis rígidas impostas pela FEDRA, a facção <br/>
           dos Vagalumes, que é liderada por Marlene, se revoltou <br/>
