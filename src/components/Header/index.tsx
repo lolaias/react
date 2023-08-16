@@ -14,13 +14,10 @@ export function Header({ setPage }: IPage) {
             <a href="#" onClick={() => setPage(1)}>Página Inicial</a>
           </li>
           <li>
-            <a href="#" onClick={() => setPage(2)}>Cadastrar</a>
+            <a href="#" onClick={() => setPage(2)}>Listagem Atual</a>
           </li>
           <li>
-            <a href="#" onClick={() => setPage (3)}>Sobre</a>
-          </li>
-          <li>
-            <a href="#" onClick={() => setPage(4)}>Listagem Atual</a>
+            <a href="#" onClick={() => setPage(3)}>Sobre</a>
           </li>
         </ul>
       </S.NavBar>

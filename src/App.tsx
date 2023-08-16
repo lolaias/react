@@ -1,5 +1,5 @@
 import { ComponentFooter, ComponentHeader } from "./components";
-import { PageHome, PageList,PageSobre } from "./pages";
+import { PageHome, PageList, PageSobre } from "./pages";
 import { GlobalStyle, Main } from "./styles/GlobalStyle";
 import { Dispatch, SetStateAction, useState } from "react";
 
