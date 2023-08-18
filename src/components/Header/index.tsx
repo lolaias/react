@@ -1,5 +1,5 @@
 import * as S from "./styles"
-import Logo from "../../assets/vagalume 1.png"
+import Logo from "../../assets/Marceline The Vampire Queen Ice King Logo Cartoon Network Television Show PNG - Free Download-PhotoRoom 1.png"
 import { IPage } from "../../App"
 
 export function Header({ setPage }: IPage) {
