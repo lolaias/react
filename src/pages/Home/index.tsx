@@ -1,13 +1,15 @@
 import * as S from './styles'
-import fundo from "../../assets/baixados.jpeg"
+import button from "../../assets/button.png"
 export function Home() {
   return (
     <S.Section>
-      <button>
-        <a href="">Sobre</a>
-      </button>
-      <div style={{ backgroundImage: `url(${fundo})`}}>
-        </div>
+      <div>
+        <button>
+          <a href="">
+            <img src={button} alt="" />
+          </a>
+        </button>
+      </div>
     </S.Section>
   );
 };
