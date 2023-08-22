@@ -5,11 +5,11 @@ export const Aside = styled.aside`
   background-color: ${colors.third};
   border-radius: 1rem;
   padding: 1rem;
-  line-height: 2rem;
+  line-height:2rem;
   h3 strong{
     font-weight: bold;
   }
   img{
-    width: 20%;
+    width: 9%;
   }
 `

@@ -4,6 +4,7 @@ export const Section = styled.section`
   display: grid;
   grid-template-columns: auto auto auto auto;
   gap: 1rem;
+  min-height: 90vh;
   @media (max-width: 1010px) {
     grid-template-columns: auto auto auto;
   }

@@ -1,34 +1,59 @@
 
 export const dados = [
-    {
+  {
       id: 1,
-      img: "",
-      nome: "Ana",
+      nome: "Princesa Jujuba",
       idade: "14",
-      qualificações:"Agilidade, Raciocinio Rapido"
+     
+      
     },
     {
       id: 2,
-      nome: "Ethan",
+      nome: "Marceline",
       idade: "16",
-      qualificações: "Disciplina"
+     
+
     },
     {
       id: 3,
-      nome: "Mary",
+      nome: "Finn",
       idade: "18",
-      qualificações: "Persistência"
+      
+      
     },
     {
       id: 4,
-      nome: "Kate",
+      nome: "Jake",
       idade: "14",
-      qualificações: "Paciência"
+    
+
     },
     {
       id: 5,
-      nome: "Sasha",
+      nome: "Rei Gelado",
       idade: "19",
-      qualificações: "Rapidez, Lealdade"
+    
+
+    },
+    {
+      id: 6,
+      nome: "BMO",
+      idade: "19",
+   
+
+    },
+    {
+      id: 7,
+      nome: "Princesa Caroço",
+      idade: "19",
+    
+
+    },
+    {
+      id: 8,
+      nome: "Lady Iris",
+      idade: "19",
+  
+
     },
   ]

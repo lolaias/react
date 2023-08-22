@@ -43,9 +43,6 @@ export const NavBar = styled.nav`
 
       }
     }
-    li:hover {
-      background-color: ${colors.secondarLight};
-    }
   }
 
 `
