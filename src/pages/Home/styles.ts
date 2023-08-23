@@ -8,9 +8,10 @@ export const Section = styled.section`
     margin: 0 auto; 
   };
   button{
-    padding: 1rem;
+    padding:0.3rem ;
     justify-content: flex-start;
     background-color: transparent;
+    width: 30%;
   };
   div{
     display: flex;

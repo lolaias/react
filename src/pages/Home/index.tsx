@@ -1,6 +1,6 @@
 import * as S from './styles'
-import button from "../../assets/button.png"
-import fundo from "../../assets/fundo.jpeg.jpeg"
+import button from "../../assets/Button.png"
+import fundo from "../../assets/9a990c46-390d-4652-b083-c9b712855ef0.jpeg"
 
 export function Home() {
   return (

@@ -4,11 +4,13 @@ import Logo from "../../assets/Marceline The Vampire Queen Ice King Logo Cartoon
 export function Header () {
   return (
     <S.Header>
+      
       <picture>
         <img src={Logo} alt="Logo" />
       </picture>
      
       <S.NavBar>
+
                 <ul className="header">
                     <li>
                         <a href="/">Home</a>
@@ -18,7 +20,7 @@ export function Header () {
                     </li>
                 </ul>
             </S.NavBar>
-    
+          
     </S.Header>
   )
 }

@@ -7,8 +7,9 @@ import * as S from "./styles"
 export function Layout() {
     return (
         <>
+                 <S.Fundo>
                 <ComponentHeader />
-                <S.Fundo>
+               
                     <Outlet />
                 </S.Fundo>
                 <ComponentFooter />
