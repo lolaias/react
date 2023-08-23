@@ -1,21 +1,16 @@
 import styled from 'styled-components'
-import { colors } from '../../styles/GlobalStyle'
+import fundo from "../../assets/9a990c46-390d-4652-b083-c9b712855ef0.jpeg"
+
 
 export const Section = styled.section`
-    *{
+  background-image: url(${fundo}); 
+  div {
     display: flex;
-    max-width: 1090px;
-    margin: 0 auto; 
-  };
-  button{
-    padding:0.3rem ;
-    justify-content: flex-start;
-    background-color: transparent;
-    width: 30%;
-  };
-  div{
-    display: flex;
-    justify-content: flex-start;
     align-items: center;
-  }
+  };
+  img {
+    width: 15rem;
+    height: auto;
+    margin-left: 4rem;
+  };
 `
