@@ -1,5 +1,4 @@
 import * as S from "./styles";
-import line from "../../assets/Group 3.png"
 
 export function Sobre() {
   return (
@@ -32,9 +31,7 @@ export function Sobre() {
             os hérois da terra de Ooo.
           </p>
         </div>
-     <div className="imagem">
-      <img src={line} alt="line"></img>
-     </div>
+   
       </section>
     </S.Section>
   );
