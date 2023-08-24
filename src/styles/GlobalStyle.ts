@@ -7,6 +7,7 @@ export const GlobalStyle = createGlobalStyle`
     outline: 0;
     border: 0;
     box-sizing: border-box;
+    font-family: 'Amatic SC', cursive;
   }
 `
 export const colors = {

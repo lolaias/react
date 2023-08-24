@@ -13,4 +13,7 @@ export const Footer = styled.footer`
     width: auto;
     padding: 0.4rem;
   }
+  div{
+    right: 100%;
+  }
 `

@@ -17,4 +17,9 @@ export const Section = styled.section`
     justify-content: center;
     margin-bottom: 1rem;
   }
+  .imagem{
+    display: flex;
+  width: 1rem;
+    
+  }
 `

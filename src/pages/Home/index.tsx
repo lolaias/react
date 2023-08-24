@@ -1,5 +1,5 @@
 import * as S from './styles'
-import button from "../../assets/Button.png"
+import button from "../../assets/button (2).png"
 
 export function Home() {
   return (

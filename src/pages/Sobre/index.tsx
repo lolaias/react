@@ -1,4 +1,5 @@
 import * as S from "./styles";
+import line from "../../assets/Group 3.png"
 
 export function Sobre() {
   return (
@@ -31,30 +32,9 @@ export function Sobre() {
             os hérois da terra de Ooo.
           </p>
         </div>
-        <h2>Linha do Tempo</h2>
-        <h4>2010</h4>
-        <p>
-          Hora de Aventura estreia no <br />
-          Cartoon Network.
-        </p>
-        <h4>2014</h4>
-        <p>
-          Flame Princess torna-se a <br />
-          governante do Reino do Fogo.
-        </p>
-        <h4>2015</h4>
-        <p>
-          Finn conhece seu pai humano,
-          <br />
-          Martin, e seu clone de grama.
-        </p>
-        <h4>2018</h4>
-        <p>
-          Grande Guerra das Gomas
-          <br />
-          termina com a derrota de GOLB e <br />o beijo de Bubbline finalmente
-          acontece.
-        </p>
+     <div className="imagem">
+      <img src={line} alt="line"></img>
+     </div>
       </section>
     </S.Section>
   );
