@@ -17,6 +17,9 @@ export function Header() {
           <li>
             <a href="/Personagem">Personagens</a>
           </li>
+          <li>
+            <a href="/Cadastro">Cadastro</a>
+          </li>
         </ul>
       </S.NavBar>
     </S.Header>
