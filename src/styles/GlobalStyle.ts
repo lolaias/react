@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components"
-import 'react-toastify/dist/ReactToastify'
+import 'react-toastify/dist/ReactToastify.css'
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
 export const colors = {
   primary: "#4D4C4C",
   secondarLight:"#FEA78B",
-  secondary: "#978CB5",
+  secondary: "#DCB1E0",
   third: "#E1B1ED",
   black: "#000",
   white: "#fff"

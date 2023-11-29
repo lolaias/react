@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom"
-import { PageLayout, PageHome, PageSobre, PagePersonagem, PageCadastro, PageAdm, PageLogin, AdmPage } from "../pages"
+import { PageLayout, PageHome, PageSobre, PagePersonagem, PageCadastro, PageLogin, AdmPage } from "../pages"
 import ProtectedRoute from './ProtectedRoute'
 
-export const Rotas = () => {
+export const RouteSoftware = () => {
     return (
         <Routes>
             <Route path="/" element={<PageLayout/>} >
@@ -19,4 +19,4 @@ export const Rotas = () => {
     );
 };
 
-export default Rotas;
+export default RouteSoftware;

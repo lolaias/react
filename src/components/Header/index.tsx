@@ -20,6 +20,9 @@ export function Header() {
           <li>
             <a href="/Cadastro">Cadastro</a>
           </li>
+          <li>
+            <a href="/Adm" >Adm</a>
+          </li>
         </ul>
       </S.NavBar>
     </S.Header>

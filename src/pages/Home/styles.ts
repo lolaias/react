@@ -3,7 +3,10 @@ import fundo from "../../assets/9a990c46-390d-4652-b083-c9b712855ef0.jpeg"
 
 
 export const Section = styled.section`
-  background-image: url(${fundo}); 
+  background-image: url(${fundo});
+  background-repeat: no-repeat ;
+  background-size: '100%',
+  
   div {
     display: flex;
     align-items: center;
@@ -12,5 +15,7 @@ export const Section = styled.section`
     width: 15rem;
     height: auto;
     margin-left: 4rem;
+    
   };
 `
+

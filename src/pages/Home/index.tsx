@@ -8,8 +8,6 @@ export function Home() {
         height: '100vh',
         display: 'flex',
         alignItems: 'center', 
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: '100%',
       }}>
         <div>
           <a href="/Sobre">

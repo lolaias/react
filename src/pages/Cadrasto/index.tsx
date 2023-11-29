@@ -1,4 +1,3 @@
-import * as S from './styles';
 import { FormEvent, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaKey } from "react-icons/fa";
@@ -6,14 +5,13 @@ import { BsFillPersonFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { toast } from "react-toastify";
 
-
+import * as S from "./styles";
 import { IErrorResponse, IUser } from "../../interface/user.interface";
 import { AxiosError } from "axios";
 import { apiUser } from "../../services/data";
+import  fundo from "../../assets/fundoda.gif"
 
-
-
-export function Cadastro = () => {
+export function Cadastro() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState<IUser>({
     name: '',
@@ -40,6 +38,12 @@ export function Cadastro = () => {
     }
   }
   return (
+    <section style={{
+      height:'100vh',
+      backgroundImage: `url(${fundo})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: '100%',
+      }}>
     <S.Section>
       <h1>Cadastre-se</h1>
       <form method="post" onSubmit={handleSubmit}>
@@ -72,14 +76,7 @@ export function Cadastro = () => {
           <button type="submit">Salvar</button>
         </p>
       </form>
-        <section
-          style={{
-            height: "100vh",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "100%",
-          }}
-        >
-      </section>
     </S.Section>
+    </section>
   );
-}
+};

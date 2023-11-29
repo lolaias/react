@@ -30,6 +30,7 @@ export const NavBar = styled.nav`
       display: flex;
       align-items: center;
       a {
+        font-size: 1.5rem;
         text-decoration: none;
         color: var(--black);
       }
