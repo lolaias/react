@@ -1,4 +1,3 @@
-import React from "react";
 import * as S from "./styles";
 import foto from "../../assets/gayy-PhotoRoom.png-PhotoRoom.png"
 
