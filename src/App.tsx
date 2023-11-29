@@ -1,15 +1,19 @@
-
-import { GlobalStyle } from './styles/GlobalStyle'
-import { RouteSoftware } from "./Routes/index"
 import { BrowserRouter } from "react-router-dom"
+import { GlobalStyle } from "./styles/GlobalStyle"
+import { RouteSoftware } from "./Routes"
+import { ToastContainer } from "react-toastify";
+import { AuthProvider } from "./context/authContext";
 
-export function App() {
+function App() {
   return (
-    <>
-      <BrowserRouter>
-        <GlobalStyle />
+    <BrowserRouter>
+      <GlobalStyle />
+      <ToastContainer autoClose={3000} />
+      <AuthProvider>
         <RouteSoftware />
-      </BrowserRouter>
-    </>
+      </AuthProvider>
+    </BrowserRouter>
   )
 }
+
+export default App

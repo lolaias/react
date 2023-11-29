@@ -1,22 +1,18 @@
-import * as S from './styles';
 import { FormEvent, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FaKey } from "react-icons/fa";
-import { BsFillPersonFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 import { toast } from "react-toastify";
 
-
-import { IErrorResponse, IUser } from "../../interface/user.interface";
+import * as S from "./styles";
+import { useAuth } from "../../hooks/authcontext";
+import { IErrorResponse, IUser } from "../../interfaces/user.interface";
 import { AxiosError } from "axios";
-import { apiUser } from "../../services/data";
 
-
-
-export function Cadastro = () => {
+export function Login() {
   const navigate = useNavigate();
+  const { signIn } = useAuth()
   const [formData, setFormData] = useState<IUser>({
-    name: '',
     email: '',
     password: '',
   })
@@ -26,31 +22,23 @@ export function Cadastro = () => {
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault()
     try {
-      await apiUser.register(formData);
-      toast.success("Cadastro realizado com sucesso!");
-      navigate('/login')
+      const { email, password } = formData
+      await signIn({
+        email: String(email),
+        password: String(password),
+      })
+      toast.success("Login realizado com sucesso!");
+      navigate('/adm')
     } catch (error) {
       const err = error as AxiosError<IErrorResponse>
-      let messages = err.response?.data.message
-      if (err.response?.data.errors) {
-        messages = err.response?.data.errors?.map((i) => i.message)
-          .reduce((total, cur) => `${total} ${cur}`)
-      }
-      toast.error(messages)
+      toast.error(String(err.response?.data))
     }
   }
+
   return (
     <S.Section>
-      <h1>Cadastre-se</h1>
+      <h1>Login</h1>
       <form method="post" onSubmit={handleSubmit}>
-        <label htmlFor="nome">Nome</label>
-        <div>
-          <BsFillPersonFill />
-          <input type="text" name="name" id="nome" placeholder="Nome"
-            onChange={(e) => handleChange({ name: e.target.value })}
-            value={formData?.name}
-          />
-        </div>
         <label htmlFor="email">E-mail</label>
         <div>
           <MdEmail />
@@ -68,18 +56,10 @@ export function Cadastro = () => {
           />
         </div>
         <p>
-          Já possui conta? <Link to="/login">Faça o login</Link>
-          <button type="submit">Salvar</button>
+          Não possui conta? <Link to="/cadastrar">Cadastre-se</Link>
+          <button type="submit">Entrar</button>
         </p>
       </form>
-        <section
-          style={{
-            height: "100vh",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "100%",
-          }}
-        >
-      </section>
     </S.Section>
   );
-}
+};
